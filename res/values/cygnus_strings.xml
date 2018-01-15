@@ -30,4 +30,7 @@
     <string name="ok">OK</string>
     <string name="edit_hint">Value</string>
     <string name="seek_value_edit_label">Set value</string>
+
+    <!-- Volume link notification -->
+    <string name="volume_link_notification_title">Link ring &amp; notification volumes</string>
 </resources>
