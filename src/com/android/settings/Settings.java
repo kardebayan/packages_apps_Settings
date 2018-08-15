@@ -243,4 +243,6 @@ public class Settings extends SettingsActivity {
      */
     public static class MediaControlsSettingsActivity extends SettingsActivity {}
 
+    // Cygnus Additions.
+    public static class SpaceshipActivity extends SettingsActivity {}
 }
