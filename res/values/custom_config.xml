@@ -33,4 +33,7 @@
     <!-- Swipe to screenshot -->
     <string name="swipe_to_screenshot_title">Swipe to screenshot</string>
     <string name="swipe_to_screenshot_summary">Swipe 3 fingers down the screen to take a screenshot</string>
+    
+    <!-- Whether to show or hide sensitive info (like IMEI and Phone Number) on About phone -->
+    <bool name="configShowDeviceSensitiveInfo">false</bool>
 </resources>
