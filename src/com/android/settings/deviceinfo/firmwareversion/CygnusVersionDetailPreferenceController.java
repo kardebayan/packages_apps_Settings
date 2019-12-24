@@ -36,13 +36,13 @@ import com.android.settings.slices.Sliceable;
 import com.android.settingslib.RestrictedLockUtils;
 import com.android.settingslib.RestrictedLockUtilsInternal;
 
-public class LineageVersionDetailPreferenceController extends BasePreferenceController {
+public class CygnusVersionDetailPreferenceController extends BasePreferenceController {
 
     private static final String TAG = "lineageVersionDialogCtrl";
     private static final int DELAY_TIMER_MILLIS = 500;
     private static final int ACTIVITY_TRIGGER_COUNT = 3;
 
-    private static final String KEY_LINEAGE_VERSION_PROP = "ro.lineage.version";
+    private static final String KEY_CYGNUS_VERSION_PROP = "ro.cygnus.version";
 
     private static final String PLATLOGO_PACKAGE_NAME = "org.lineageos.lineageparts";
     private static final String PLATLOGO_ACTIVITY_CLASS =
@@ -54,7 +54,7 @@ public class LineageVersionDetailPreferenceController extends BasePreferenceCont
     private RestrictedLockUtils.EnforcedAdmin mFunDisallowedAdmin;
     private boolean mFunDisallowedBySystem;
 
-    public LineageVersionDetailPreferenceController(Context context, String key) {
+    public CygnusVersionDetailPreferenceController(Context context, String key) {
         super(context, key);
         mUserManager = (UserManager) mContext.getSystemService(Context.USER_SERVICE);
         initializeAdminPermissions();
@@ -77,7 +77,7 @@ public class LineageVersionDetailPreferenceController extends BasePreferenceCont
 
     @Override
     public CharSequence getSummary() {
-        return SystemProperties.get(KEY_LINEAGE_VERSION_PROP,
+        return SystemProperties.get(KEY_CYGNUS_VERSION_PROP,
                 mContext.getString(R.string.unknown));
     }
 
@@ -126,11 +126,5 @@ public class LineageVersionDetailPreferenceController extends BasePreferenceCont
                 mContext, UserManager.DISALLOW_FUN, UserHandle.myUserId());
         mFunDisallowedBySystem = RestrictedLockUtilsInternal.hasBaseUserRestriction(
                 mContext, UserManager.DISALLOW_FUN, UserHandle.myUserId());
-    }
-
-    @Override
-    public void copy() {
-        Sliceable.setCopyContent(mContext, getSummary(),
-                mContext.getText(org.lineageos.platform.internal.R.string.lineage_version));
     }
 }
