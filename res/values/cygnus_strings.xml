@@ -12,6 +12,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Cygnus version -->
-    <string name="cygnus_version">"Cygnus version"</string>
-
+    <string name="cygnus_version">"Cygnus Version"</string>
+   
+    <!-- Cygnus Build Number -->
+    <string name="cygnus_build_number">"Cygnus Build Number"</string>
 </resources>

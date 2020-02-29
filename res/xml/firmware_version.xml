@@ -38,6 +38,13 @@
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.CygnusVersionDetailPreferenceController"/>
 
+    <!-- Cygnus Build Number -->
+    <Preference 
+        android:key="build_date"
+        android:title="@string/cygnue_build_number"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.CygnusBuildNumberPreferenceController"/>
 
     <!-- Security patch -->
     <Preference
