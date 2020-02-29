@@ -30,6 +30,15 @@
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
 
+    <!-- Cygnus version -->
+    <Preference
+        android:key="cygnus_version"
+        android:title="@string/cygnus_version"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.CygnusVersionDetailPreferenceController"/>
+
+
     <!-- Security patch -->
     <Preference
         android:key="security_key"
