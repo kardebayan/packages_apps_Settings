@@ -17,7 +17,7 @@
 <resources>
 
     <!-- Spaceship Color -->
-    <color name="homepage_spaceship_background">#536dfe</color>
+    <color name="homepage_spaceship_background">#00000000</color>
 
     <!-- Shortcuts -->
     <color name="icon_accent_custom">@*android:color/accent_device_default_light</color>
