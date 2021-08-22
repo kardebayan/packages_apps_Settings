@@ -201,6 +201,9 @@ public class Enabled5GPreferenceController extends TelephonyTogglePreferenceCont
             Log.d(TAG, "setPreferredNetworkTypeBitmask");
             return true;
         }
+        // Restore the previous network mode if failed
+        Settings.Global.putInt(mContext.getContentResolver(),
+                Settings.Global.PREFERRED_NETWORK_MODE + mSubId, preNetworkMode);
         return false;
     }
 
